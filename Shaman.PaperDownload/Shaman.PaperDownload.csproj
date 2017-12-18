@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Downloads a scientific paper (by DOI or by URL) from LibGen/SciHub.</Description>
+    <VersionPrefix>1.0.1.0</VersionPrefix>
+    <Authors>Andrea Martinelli</Authors>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net461</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <AssemblyName>Shaman.PaperDownload</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyOriginatorKeyFile>ShamanOpenSourceKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PackageId>Shaman.PaperDownload.Cli</PackageId>
+    <PackageIconUrl>http://shaman.io/images/shaman-nuget-icon.png</PackageIconUrl>
+    <PackageProjectUrl>http://shaman.io/antiufo/Shaman.PaperDownload</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Shaman.Configuration.Manager">
+      <Version>1.0.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="Shaman.Console">
+      <Version>1.0.0.10</Version>
+    </PackageReference>
+    <PackageReference Include="Shaman.Http">
+      <Version>1.0.1.11</Version>
+    </PackageReference>
+    <PackageReference Include="Shaman.SingleThreadSynchronizationContext">
+      <Version>1.0.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>
